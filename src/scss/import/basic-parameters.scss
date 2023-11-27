@@ -1,0 +1,54 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $montFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  background: #333;
+  color: #fff;
+
+  @media (max-width: 767.98px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+
+  // min-height: 100%;
+  // display: grid;
+
+  // grid-template: minmax(90px, auto) 1fr minmax(70px, auto);
+  // grid-template-areas:
+  //   'header'
+  //   'main'
+  //   'footer';
+
+  // grid-template:
+  //   [start] 'header' minmax(90px, auto) [row2]
+  //   [row2] 'main' 1fr [row3]
+  //   [row3] 'footer' minmax(70px, auto) [row-end] / 1fr;
+}
+
+.main {
+  flex: 1 1 auto;
+
+  .section-class,
+  .section-class {
+    &:not(:last-child) {
+      @include respValue('margin-bottom', 90, 60, 1);
+    }
+  }
+
+  // &:not(:last-child) {
+  //   @include respValue('margin-bottom', 120, 90, 1);
+  // }
+}

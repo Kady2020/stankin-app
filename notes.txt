@@ -1,0 +1,39 @@
+===============================================
+
+Для запуска NPM в проекте на Windows:
+1. устанавливаем Node.js - https://nodejs.org/en/
+2. Устанавливаем Git Bash - https://git-scm.com/
+3. Пишем команду (терминал или редактор от имени администратора) - Set-ExecutionPolicy RemoteSigned
+4. Устанавливаем галп глобально - npm i gulp-cli -g
+5. В редакторе открываем папку проекта и в терминале
+   инициализирум файл настроек npm init --yes, далее устанавливаем галп
+   локально npm i gulp -D (флаг -D позволяет сохранять версию установленных пакетов)
+6. Убедимся, что всё работает корректно при помощи команд node -v, gulp -v
+   В результате мы должны увидеть версию Node.js и версии CLI GULP version и Local GULP version
+   и если всё работает верно, то переходим к написанию задач, создав в корне папки проекта
+   файл, gulpfile.js
+
+===============================================
+
+Для запуска NPM в проекте на Mac:
+1. Node.js (сайт) - https://nodejs.org/en/
+2. Homebrew (терминал) - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+3. Git (терминал) - 3.1. brew install git 3.2. brew install git-gui
+4. Gulp (терминал) - sudo npm install gulp-cli -g
+
+===============================================
+
+npm i - установка готовых пакетов
+npm run dev (gulp dev) - режим разработчика
+npm run build (gulp build) - режим продакшена
+npm run sprite - создание спрайтов
+npm run fonts - перезапись шрифтов
+npm run deploy - выгрузка проекта ftp
+npm run zip - создание архива продакшена
+npm run devbuild - режим продакшена без webp изображений
+
+@img/ - подключение изображений из разных директорий
+npm list --depth=0 - просмотр установленных пакетов
+npm r bootstrap (bootstrap как пример) - удаление пакетов
+
+===============================================
