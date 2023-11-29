@@ -8,10 +8,7 @@
   label {
     display: inline-block;
     padding: 0 0 0 70px;
-
     font-size: 20px;
-    font-weight: 500;
-
     transition: all 0.2s linear;
     cursor: pointer;
   }
@@ -45,11 +42,11 @@
   }
 
   &.active {
-    color: #4fbb65;
+    text-shadow: 0 0 2px #fff;
 
     &::before,
     &::after {
-      background: #4fbb65;
+      background: #ffcc00;
     }
 
     &::after {

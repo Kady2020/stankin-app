@@ -1,4 +1,3 @@
-//Select
 let selects = document.getElementsByTagName('select');
 if (selects.length > 0) {
   selects_init();

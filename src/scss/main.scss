@@ -26,17 +26,17 @@
 /*==================== REPEAT BLOCK ====================*/
 @import 'import/repeat-blocks.scss';
 
-/*==================== CUSTOM SELECT ====================*/
-// @import 'import/custom-select.scss';
-
 /*==================== CHECKBOX ====================*/
-// @import 'import/checkbox.scss';
+@import 'import/checkbox.scss';
 
 /*==================== RADIO BUTTON ====================*/
-// @import 'import/radio-button.scss';
+@import 'import/radio-button.scss';
 
 /*==================== SPOILER ====================*/
 // @import 'import/spoiler.scss';
+
+/*==================== CUSTOM SELECT ====================*/
+// @import 'import/custom-select.scss';
 
 /*==================== HEADER ====================*/
 @import 'import/header.scss';
@@ -123,14 +123,14 @@
   }
 }
 
-//! SCREEN-1
-.cutting-mode {
+//! MAIN-SCREEN
+.main-screen {
   &__title {
   }
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 30px;
   }
 
@@ -138,10 +138,7 @@
   }
 }
 
-.item-cutting-mode {
-  // display: grid;
-  // grid-auto-flow: row;
-  // grid-template: auto 1fr minmax(50px, auto) / 1fr;
+.item-main-screen {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -164,6 +161,9 @@
   &__btn {
   }
 }
+
+/*==================== TURNING-SCREEN-1 ====================*/
+@import 'import/turning-screen-1.scss';
 
 /*==================== FOOTER ====================*/
 @import 'import/footer.scss';

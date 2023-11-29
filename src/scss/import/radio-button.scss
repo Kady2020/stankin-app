@@ -3,7 +3,7 @@
     position: relative;
 
     &:not(:last-child) {
-      margin: 0 0 18px 0;
+      margin: 0 0 15px 0;
     }
 
     input {
@@ -12,11 +12,8 @@
 
     label {
       display: inline-block;
-      padding: 0 0 0 30px;
-
+      padding: 0 0 0 50px;
       font-size: 20px;
-      font-weight: 500;
-
       transition: all 0.2s linear;
       cursor: pointer;
     }
@@ -42,7 +39,7 @@
       top: 50%;
       left: 4px;
       transform: translate(0, -50%) scale(0);
-      background: #4fbb65;
+      background: #ffcc00;
       border-radius: 50%;
       transition: all 0.2s linear;
       cursor: pointer;
@@ -50,7 +47,7 @@
 
     &.active {
       label {
-        color: #2879d0;
+        text-shadow: 0 0 2px #fff;
       }
 
       &::after {
